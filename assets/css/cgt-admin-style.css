@@ -1,0 +1,68 @@
+.wrap {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cgt-category-row {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cgt-subcategories {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.cgt-subcategory-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"] {
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(50% - 14px);
+}
+
+button.button {
+    padding: 8px 12px;
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: max-content;
+}
+
+button.button:hover {
+    background-color: #005177;
+}
+
+button.cgt-remove-category, button.cgt-remove-sub-category {
+    background-color: #dc3232;
+}
+
+button.cgt-remove-category:hover, button.cgt-remove-sub-category:hover {
+    background-color: #a00;
+}
+
+.cgt-instruction {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}

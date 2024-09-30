@@ -1,0 +1,430 @@
+/* Overall Form Container Style */
+body {
+    font-family: "Source Sans Pro", sans-serif;
+}
+.cgt-form-container {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.226);
+}
+
+/* Heading Styles */
+h2 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Source Sans Pro", sans-serif;
+}
+/* Form Step General Style */
+.cgt-form-step {
+    display: none; /* Hidden by default; shown by JavaScript */
+    margin-bottom: 20px;
+}
+
+.cgt-form-step.active {
+    display: block; /* The active step is displayed */
+}
+
+/* Input Fields Styles */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+    width: calc(33.33% - 10px); /* Equal width for all inputs */
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 10px; /* Space between inputs */
+    box-sizing: border-box;
+    border: 1px solid #007bff68;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.step-user-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.step-user-info input[type="text"] {
+    flex: 1 1 48%;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.step-user-info input[type="email"],
+.step-user-info input[type="tel"] {
+    flex: 1 1 48%;
+    margin-right: 5px;
+}
+
+.step-user-info input[type="text"]:last-child {
+    margin-right: 0;
+}
+
+input[readonly] {
+    background-color: #e9e9ecef;
+    color: #495057;
+    cursor: not-allowed;
+}
+
+/* Button styles and positioning */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.cgt-prev-btn {
+    padding: 8px 16px;
+    background-color: #007bff00;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    color: #d90a07;
+    border: 1px solid #d90a07;
+    border-radius: 4px;
+    width: 50%;
+    margin-right: 1.5px;
+}
+
+.cgt-prev-btn:hover {
+    background: #007bff;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.cgt-next-btn:hover,
+.cgt-sub-btn:hover {
+    background: #d90a07;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+
+.cgt-prev-btn {
+    margin-right: auto;
+}
+
+.cgt-next-btn,
+.cgt-sub-btn,
+button[type="submit"] {
+    margin-left: auto;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 18px;
+    color: #d90a07;
+    background: #d90a0700;
+    border: 1px solid #d90a07;
+    border-radius: 4px;
+    width: 50%;
+    margin-left: 1px;
+}
+
+button[type="submit"]:hover {
+    margin-left: auto;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 18px;
+    color: #fff;
+    background: #4CAF50;
+    border: 1px solid #d90a07;
+    border-radius: 4px;
+    width: 50%;
+    margin-left: 1px;
+}
+
+/* Category and Subcategory Styles */
+.category-title {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.sub-category-input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures spacing is maintained */
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Ensures all input fields in the subcategory group are evenly spaced */
+.sub-category-input-group input,
+.sub-category-input-group label {
+    flex: 1; /* Distributes space evenly */
+    margin-right: 10px; /* Consistent spacing */
+}
+
+/* Last item in the group should not have a margin to align perfectly on the right */
+.sub-category-input-group input:last-child,
+.sub-category-input-group label:last-child {
+    margin-right: 0;
+}
+
+/* Margin and Padding for the form */
+form {
+    margin-bottom: 20px;
+}
+
+/* Responsive Settings */
+@media (max-width: 600px) {
+    .sub-category-input-group input[type="number"],
+    .sub-category-input-group label {
+        width: 100%; /* Full width on small screens */
+        margin-top: 5px; /* Space between stacked elements */
+    }
+
+    button.cgt-next-btn,
+    button.cgt-prev-btn,
+    button.cgt-sub-btn,
+    button[type="submit"] {
+        width: 100%;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+}
+
+/* Total Wattage Styles */
+#cgt-total-wattage {
+    background: #d90a07;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.square-foot h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    color: #12395f;
+}
+.square-foot input[type="number"] {
+    text-align: center !important;
+}
+.square-footage-input {
+    width: 65% !important;
+    margin: 5px auto 25px auto !important;
+    display: block;
+    padding: 10px !important;
+}
+.calc-message p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+/* Additional items input and button styling */
+/* Ensure buttons and input fields are aligned correctly */
+.sub-category-input-group, .item-addition-area {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-bottom: 10px;
+    margin: 0;
+}
+
+.sub-category-input-group input, 
+.item-addition-area input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.add-item-btn {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 4px;
+    margin-top: 6px;
+    vertical-align: middle;
+    height: 43px;
+}
+.remove-item-btn {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 4px;
+    margin-bottom: 13px;
+    vertical-align: middle;
+    height: 43px;
+}
+
+/* Styling adjustments for button alignments and padding */
+button {
+    padding: 8px 16px; /* Adjust padding for consistency */
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005a87;
+}
+
+.remove-item-btn {
+    background: #d90a07;
+}
+.remove-item-btn:hover {
+    background: #c82333;
+}
+
+#cgt-generator-form #final-step p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#cgt-generator-form #final-step label {
+    display: block;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+#generators-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.generator-item {
+    width: calc(50% - 10px); /* Two items per row with space between */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.generator-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.generator-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.generator-item p {
+    margin: 5px 0;
+}
+
+.generator-item .button {
+    display: block;
+    padding: 8px 16px;
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.generator-item .button:hover {
+    background-color: #005a87;
+}
+
+/* Responsive Settings for Generator Items */
+@media (max-width: 768px) {
+    .generator-item {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Loader Styles */
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Other styles */
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-controls button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination-controls button:hover {
+    background-color: #0056b3;
+}
+
+.pagination-button {
+    padding: 10px;
+    margin: 0 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.pagination-button.active {
+    background-color: #d90a07;
+    color: white;
+}
+
+.pagination-prev,
+.pagination-next {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.pagination-prev:hover,
+.pagination-next:hover {
+    background-color: #e0e0e0;
+}
