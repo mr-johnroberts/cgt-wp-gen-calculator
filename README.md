@@ -8,8 +8,8 @@ JavaScript, CSS3, HTML5, PHP, and WooCommerce REST API.
 Determines the total wattage of a property and lists compatible generators based on the calculated wattage range.
 
 # **Functionality:**
-•	Provides users with an intuitive interface to calculate their property’s wattage requirements.
-•	Displays a curated list of generators from the WooCommerce product database matching the wattage range.
+-	Provides users with an intuitive interface to calculate their property’s wattage requirements.
+-	Displays a curated list of generators from the WooCommerce product database matching the wattage range.
 
 # **Integration:** 
 Connects seamlessly with the WooCommerce REST API to retrieve and display product information in real-time.
