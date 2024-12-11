@@ -1,8 +1,8 @@
 # **cgt-wp-gen-calculator**
-CGT WP Gen Calculator is a custom WordPress-Woocommerce Generator Calculator Plugin built on JavaScript, CSS, HTML, and PHP. It is used to the determine the total wattage of a property and lists the available generators that fall within that range so that user can select the right generator needed to power their property during power outages.
+CGT WP Gen Calculator is a custom WordPress-Woocommerce Generator Calculator Plugin built on JavaScript, CSS3, HTML5, WordPress, WooCommerce, AWS, and PHP. It determines a property's total wattage and lists the available generators within that range so that users can select the right generator to power their property during power outages.
 
 # **Technology Stack:** 
-JavaScript, CSS3, HTML5, PHP, WordPress, MySQL, and WooCommerce REST API.
+JavaScript, CSS3, HTML5, PHP, WordPress, MySQL, AWS, and WooCommerce REST API.
 
 # **Purpose:** 
 Determines the total wattage of a property and lists compatible generators based on the calculated wattage range.
