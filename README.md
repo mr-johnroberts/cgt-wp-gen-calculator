@@ -1,6 +1,7 @@
 # CGT Generator Calculator
 
-**CGT Generator Calculator** is a WordPress plugin that allows users to easily calculate Capital Gains Tax (CGT). It provides an easy-to-use interface for site visitors to input necessary data and get the calculated CGT. The plugin can be customized via the WordPress admin dashboard and integrated into posts and pages via shortcodes.
+**CGT Generator Calculator** is a custom WordPress-Woocommerce Generator Calculator Plugin built on JavaScript, CSS3, HTML5, WordPress, WooCommerce, AWS, and PHP. It determines a property's total wattage and lists the available generators within that range so that users can select the right generator to power their property during power outages.
+
 
 ## Table of Contents
 
