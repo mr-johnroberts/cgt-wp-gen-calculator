@@ -33,7 +33,7 @@ Helps users select appropriate generators during power outages, enhancing decisi
 - Easy integration via shortcode.
 - Responsive design that fits any theme.
 - Customizable UI through CSS.
-- Backend options for setting custom GPO Token ID rules and Webframe URL.
+- Backend options are available to set the custom appliance fields and default wattages.
 - Real-time result updates with AJAX.
 
 ## Installation
